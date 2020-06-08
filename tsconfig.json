@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "module": "commonjs",
+        "declaration": true,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "allowSyntheticDefaultImports": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "preserveSymlinks": true,
+        "target": "esnext",
+        "sourceMap": true,
+        "baseUrl": "./src",
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "newLine": "LF",
+        "moduleResolution": "node",
+        "strictNullChecks": true,
+        "incremental": true,
+        "skipLibCheck": true,
+        "paths": {
+            "*": ["node_modules/*"]
+        }
+    },
+    "include": [
+        "src/**/*"
+    ]
+}

@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  account:
+    container_name: nest-graphql-chat
+    build:
+      context: .
+    volumes:
+      - .:/opt/graphql-service/app
+    ports:
+    - 4000:4000
+
+  mongo:
+    container_name: graphql-chat-mongo
+    image: mongo
+    volumes:
+    - /data/db
+    ports:
+    - 27017:27017

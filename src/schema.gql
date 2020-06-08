@@ -1,0 +1,38 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Profile {
+  id: Int!
+  name: String!
+}
+
+type AuthPayload {
+  id: Int!
+  profile: Profile!
+  token: String!
+}
+
+type RegisterPayload {
+  id: Int!
+  result: String!
+  message: String!
+}
+
+type MessageEvent {
+  message: String!
+}
+
+type Query {
+  myProfile: Profile!
+}
+
+type Mutation {
+  login(email: String!, password: String!): AuthPayload!
+  register(email: String!, password: String!, name: String!): RegisterPayload!
+  say(message: String!): MessageEvent!
+}
+
+type Subscription {
+  someChatRoom: MessageEvent!
+}
