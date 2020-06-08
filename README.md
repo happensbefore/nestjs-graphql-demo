@@ -2,6 +2,8 @@
 Very simple chat implementation attempt with graphql and nestjs
 
 start:
+>npm i
+>
 >docker-compose up -d
 
 go to http://localhost:4000/graphql
